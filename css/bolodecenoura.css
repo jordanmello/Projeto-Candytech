@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@300&family=Saira+Semi+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@300&family=Roboto:ital,wght@1,300&family=Saira+Semi+Condensed:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0px;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    height: 1500px;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "main"
+    "footer";
+    grid-template-rows: 50px 1fr 300px;
+}
+
+header {
+    grid-area: header;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo img {
+    width: 110px;
+    height: 110px;
+}
+
+.header-logo h1 {
+    color: #fe7499;
+}
+
+.header-produtos {  
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-produtos h4 {
+    color: #fe7499;
+    font-size: 20px;
+}
+
+main {
+    grid-area: main;
+    background-size: cover;
+    background-image: url(/img/teste2.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.titulo h1 {
+    font-family: 'Anek Devanagari', sans-serif;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    color:#fe7499;
+    font-size: 40px;
+}
+
+.titulo p {
+    font-family: 'Anek Devanagari', sans-serif;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    color: white;
+    font-size: 25px;
+}
+
+.ingredientes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 90px;
+    align-items: center;
+}
+
+.ingredientes img {
+    width: 1050px;
+    height: 650px;
+}
+
+.ingredientes-descricao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.ingredientes-descricao h2 {
+    color: #fe7499;
+    font-family: 'Anek Devanagari', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+.ingredientes-descricao  p {
+    color: white;
+    font-family: 'Anek Devanagari', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+.ingredientes-descricao h2 {
+    font-size: 30px;
+}
+
+.ingredientes-descricao p {
+    font-size: 20px;
+}
+
+.preparo h2 {
+    color: #fe7499;
+    font-size: 30px;
+}
+
+.preparo-lista ol {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+
+.preparo-lista ol, h4 {
+    color: white;
+    font-size: 20px;
+}
+
+footer {
+    grid-area: footer;
+    background-color:rgb(202, 199, 199);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.rodape h4 {
+    font-size: 13px;
+    color: black;
+}
+/*
+.contatos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: center;
+    gap: 5px;
+}
+
+.contatos h2, h4 {
+    font-family: 'Anek Devanagari', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+.Sobrenos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: center;
+    gap: 5px;
+}
+
+.sobrenos h2, h4 {
+    font-family: 'Anek Devanagari', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+*/
